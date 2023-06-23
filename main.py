@@ -1,4 +1,4 @@
-from tasks import layer1, layer2, layer3, agent1, agent2, agent3, agent4, askOpenTrons
+from tasks import layer1, layer2, layer3, agent1, agent2, agent3, agent4, askOpenTrons, extract
 from celery import group, chain
 
 
@@ -65,8 +65,55 @@ def driver2(user_input):
     return output_string
 
 def driver3(user_input):
+    phaseList = []
+    stepList = []
+    substepList = []
+    commandList = []
+    API_call_list = []
+    
 
+    phases = agent1(user_input)
+    newPhaseList = extract(phases)
+    phaseList.extend(newPhaseList)
+   
 
-driver1("Make glow in the dark E. coli")
+    for phase in phaseList:
+        steps = agent2(phase)
+        newStepList = extract(steps)
+        stepList.extend(newStepList)
+
+    
+    for step in stepList:
+        substeps = agent3(step)
+        newSubstepList = extract(substeps)
+        substepList.extend(newSubstepList)
+
+    for substep in substepList:
+        commands = agent4(substep)
+        newCommandList = extract(commands)
+        commandList.extend(newCommandList)
+
+    
+    for command in commandList:
+        API_calls = askOpenTrons(command)
+        new_API_call_list = extract(API_calls)
+        API_call_list.extend(new_API_call_list)
+
+    print(phaseList)
+    print(stepList)
+    print(substepList)
+    print(commandList)
+    print(API_call_list)
+    
+    # need to figure out how to programmatically weave this into a tree
+    # should take advantage of how i define the new list on its own
+    # then I should add a sleep to get a time
+    # then I need to use celery to group each layer and it should get way faster
+    # then I should add a simple OpenAI API call and see if that blows up
+    # and probably I'll have to figure out how to use the openai-multi-client library
+    
+    
+
+driver3("Make glow in the dark E. coli")
 
 
