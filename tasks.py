@@ -4,6 +4,8 @@ import re
 
 app = Celery('tasks', backend='rpc://', broker='pyamqp://')
 
+# celery -A tasks worker --loglevel=info -c 9
+
 
 @app.task
 def layer1(user_input):
@@ -33,7 +35,7 @@ def layer3(phase, number):
 
 @app.task
 def agent1(input):
-    answer = "We received" + input + "and we output lePhase 1, lePhase 2, and lePhase 3"
+    answer = "We received 1 query of" + input + "and we output lePhase 1, lePhase 2, and lePhase 3"
     return answer
 
 @app.task

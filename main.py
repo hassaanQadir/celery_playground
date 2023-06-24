@@ -1,6 +1,6 @@
 from tasks import layer1, layer2, layer3, agent1, agent2, agent3, agent4, askOpenTrons, extract
 from celery import group, chain
-
+import json
 
 def driver1(user_input):
     output_string = ""
@@ -71,17 +71,14 @@ def driver3(user_input):
     commandList = []
     API_call_list = []
     
-
     phases = agent1(user_input)
     newPhaseList = extract(phases)
     phaseList.extend(newPhaseList)
    
-
     for phase in phaseList:
         steps = agent2(phase)
         newStepList = extract(steps)
         stepList.extend(newStepList)
-
     
     for step in stepList:
         substeps = agent3(step)
@@ -92,28 +89,42 @@ def driver3(user_input):
         commands = agent4(substep)
         newCommandList = extract(commands)
         commandList.extend(newCommandList)
-
     
     for command in commandList:
         API_calls = askOpenTrons(command)
         new_API_call_list = extract(API_calls)
         API_call_list.extend(new_API_call_list)
+    data = {}
 
-    print(phaseList)
-    print(stepList)
-    print(substepList)
-    print(commandList)
-    print(API_call_list)
+    for phase in phaseList:
+        data[phase] = {}
+
+        for step in stepList:
+            data[phase][step] = {}
+
+            for substep in substepList:
+                data[phase][step][substep] = {}
+
+                for command in commandList:
+                    data[phase][step][substep][command] = []
+
+                    for API_call in API_call_list:
+                        data[phase][step][substep][command] = [API_call]
     
-    # need to figure out how to programmatically weave this into a tree
-    # should take advantage of how i define the new list on its own
+    print(json.dumps(data, indent=4))
+    return data
+    
     # then I should add a sleep to get a time
     # then I need to use celery to group each layer and it should get way faster
     # then I should add a simple OpenAI API call and see if that blows up
     # and probably I'll have to figure out how to use the openai-multi-client library
-    
-    
 
 driver3("Make glow in the dark E. coli")
+
+
+
+
+
+
 
 
