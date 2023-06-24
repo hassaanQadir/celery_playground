@@ -1,60 +1,40 @@
-from celery import Celery
+from celery import Celery, group, chord
 import time
 import re
 
-app = Celery('tasks', backend='rpc://', broker='pyamqp://')
+app = Celery('tasks', broker='redis://localhost:6379/0', backend='redis://localhost:6379/0')
+
 
 # celery -A tasks worker --loglevel=info -c 9
 
 
 @app.task
-def layer1(user_input):
-    message = "Here is the user input: " + str(user_input) + "\n"
-    message += "Let's break this into three phases\n"
-
-    time.sleep(3)
-
-    message += "Let's break each phase into steps\n"
-
-    return message
-
-@app.task
-def layer2(phase, number):
-    answer = "Phase #" + str(number) + " received : " + str(phase)[:10]
-    time.sleep(3)
-    answer += "Returning Phase #" + str(number) + "\n\n"
-    return answer
-
-
-@app.task
-def layer3(phase, number):
-    answer = "Step #" + str(number) + " received : " + str(phase)[:10]
-    time.sleep(3)
-    answer += "Returning Step #" + str(number) + "\n\n"
-    return answer
-
-@app.task
 def agent1(input):
+    time.sleep(5)
     answer = "We received 1 query of" + input + "and we output lePhase 1, lePhase 2, and lePhase 3"
     return answer
 
 @app.task
 def agent2(input):
+    time.sleep(5)
     answer = "We received" + input + "and we output theStep 1, theStep 2, and theStep 3"
     return answer
 
 @app.task
 def agent3(input):
+    time.sleep(5)
     answer = "We received" + input + "and we output Substep 1, Substep 2, and Substep 3"
     return answer
 
 @app.task
 def agent4(input):
+    time.sleep(5)
     answer = "We received" + input + "and we output Command 1, Command 2, and Command 3"
     return answer
 
 @app.task
 def askOpenTrons(input):
+    time.sleep(5)
     answer = "We received" + input + "and we output API code in 1 line"
     return answer
 
@@ -69,3 +49,11 @@ def extract(s):
     cleanAnswer = answer[1:]
     return cleanAnswer
 
+@app.task
+def process_results(results):
+    # This is a Celery task that processes the results from all the tasks in the group
+    # The input 'results' is a list of the outputs from each task in the group
+    theList = []
+    for result in results:
+        theList.extend(result)
+    return theList
