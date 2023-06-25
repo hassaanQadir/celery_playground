@@ -21,10 +21,29 @@ def make_requests():
             }]
         }, metadata={'num': num})
 
-
 api.run_request_function(make_requests)
 
 for result in api:
     num = result.metadata['num']
     response = result.response['choices'][0]['message']['content']
     print(f"{num} * {num}:", response)
+
+
+api2 = OpenAIMultiOrderedClient(endpoint="chats", data_template={"model": "gpt-3.5-turbo"})
+
+def stepMaker(phaseList):
+    for phase in phaseList:
+        api2.request(data={
+            "messages": [{
+                "role": "user",
+                "content": f"Break this phase of the bio research project into three steps. {phase}"
+            }]
+        }, metadata={'phase': phase})
+
+phaseList = ["Create the plasmid","Clone the plasmid into E. coli","Check for Expression of the Protein"]
+api2.run_request_function(stepMaker(phaseList))
+
+for result in api2:
+    phase = result.metadata['phase']
+    response = result.response['choices'][0]['message']['content']
+    print(f"{phase}:", response)
