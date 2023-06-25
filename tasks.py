@@ -2,6 +2,8 @@ from celery import Celery, group, chord
 import time
 import re
 import os
+import openai
+
 
 app = Celery('tasks', broker='redis://localhost:6379/0', backend='redis://localhost:6379/0')
 
@@ -11,7 +13,23 @@ app = Celery('tasks', broker='redis://localhost:6379/0', backend='redis://localh
 load_dotenv('.env')
 
 # Use the environment variables for the API keys if available
-openai_api_key = os.getenv('OPENAI_API_KEY')
+openai.api_key = os.getenv('OPENAI_API_KEY')
+
+@app.task
+def complete(prompt):
+    # Specify the model you want to use
+    model = 'text-davinci-003'
+
+    # Generate a completion using the OpenAI API
+    response = openai.Completion.create(
+        engine=model,
+        prompt=prompt,
+        max_tokens=50  # Adjust the number of tokens as per your requirements
+    )
+
+    # Return the generated completion
+    return response.choices[0].text.strip()
+
 
 @app.task
 def agent1(input):

@@ -1,4 +1,4 @@
-from tasks import agent1, agent2, agent3, agent4, askOpenTrons, extract, process_results
+from tasks import agent1, agent2, agent3, agent4, askOpenTrons, extract, process_results, complete
 from celery import group, chain, chord
 import json
 
@@ -52,6 +52,7 @@ def driver(user_input):
                     data[phase][step][substep][command] = []
 
                     for API_call in API_call_list:
+                        API_call = complete(API_call)
                         data[phase][step][substep][command] = [API_call]
     
     print(json.dumps(data, indent=4))
