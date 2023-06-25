@@ -62,10 +62,6 @@ def driver(user_input):
 driver("Make glow in the dark E. coli")
 
 
-    # then I should add a simple OpenAI API call and see if that blows up
-    # and probably I'll have to figure out how to use the openai-multi-client library
-
-
 
 
 
