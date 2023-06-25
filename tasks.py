@@ -1,12 +1,17 @@
 from celery import Celery, group, chord
 import time
 import re
+import os
 
 app = Celery('tasks', broker='redis://localhost:6379/0', backend='redis://localhost:6379/0')
 
-
 # celery -A tasks worker --loglevel=info -c 9
 
+# Load environment variables
+load_dotenv('.env')
+
+# Use the environment variables for the API keys if available
+openai_api_key = os.getenv('OPENAI_API_KEY')
 
 @app.task
 def agent1(input):
