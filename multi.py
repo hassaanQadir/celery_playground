@@ -13,7 +13,7 @@ openai.api_key = os.getenv('OPENAI_API_KEY')
 api = OpenAIMultiOrderedClient(endpoint="chats", data_template={"model": "gpt-3.5-turbo"})
 
 def make_requests():
-    for num in range(1, 10):
+    for num in range(1, 3):
         api.request(data={
             "messages": [{
                 "role": "user",
