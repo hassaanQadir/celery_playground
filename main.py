@@ -35,14 +35,15 @@ def driver(user_input):
     phaseList.extend(newPhaseList)
    
     stepList = run_chord(phaseList, agent2)
-    substepList = run_chord(stepList, agent2)
-    commandList = run_chord(substepList, agent2)
-    API_call_list = run_chord(commandList, agent2)
+    substepList = run_chord(stepList, agent3)
+    commandList = run_chord(substepList, agent4)
+    API_call_list = run_chord(commandList, agent5)
 
     for phase in phaseList:
         data[phase] = {}
 
         for step in stepList:
+            step = complete(step)
             data[phase][step] = {}
 
             for substep in substepList:
@@ -52,7 +53,6 @@ def driver(user_input):
                     data[phase][step][substep][command] = []
 
                     for API_call in API_call_list:
-                        API_call = complete(API_call)
                         data[phase][step][substep][command] = [API_call]
     
     print(json.dumps(data, indent=4))
