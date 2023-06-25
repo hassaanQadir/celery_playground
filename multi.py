@@ -17,7 +17,7 @@ def make_requests():
         api.request(data={
             "messages": [{
                 "role": "user",
-                "content": f"Can you tell me what is {num} * {num}?"
+                "content": f"Can you tell me what is {num} * {num}? Incorporate the answer into a joke?"
             }]
         }, metadata={'num': num})
 
