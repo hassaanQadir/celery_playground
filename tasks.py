@@ -3,6 +3,7 @@ import time
 import re
 import os
 import openai
+from dotenv import load_dotenv
 
 
 app = Celery('tasks', broker='redis://localhost:6379/0', backend='redis://localhost:6379/0')
