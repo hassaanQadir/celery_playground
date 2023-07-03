@@ -1,6 +1,7 @@
-from tasks import agent1, agent2, agent3, agent4, askOpenTrons, extract, process_results, complete
+from tasks import agent1, agent2, agent3, agent4, agent5, extract, process_results, complete
 from celery import group, chain, chord
 import json
+import time
 
 def run_chord(inputList, agent):
     # The header of the chord consists of a list of tasks connected by a pipeline (the '|' operator)
@@ -21,6 +22,27 @@ def run_chord(inputList, agent):
 
     return outputList
 
+def displayOutput(list1, list2, list3, list4, list5):
+    data = {}
+
+    for phase in list1:
+        data[phase] = {}
+
+        for step in list2:
+            # this is where we sequentially call the OpenAI API
+            # step = complete(step)
+            data[phase][step] = {}
+
+            for substep in list3:
+                data[phase][step][substep] = {}
+
+                for command in list4:
+                    data[phase][step][substep][command] = []
+
+                    for API_call in list5:
+                        data[phase][step][substep][command] = [API_call]
+    
+    return data
 
 def driver(user_input):
     phaseList = []
@@ -30,32 +52,23 @@ def driver(user_input):
     API_call_list = []
     data = {}
 
-    phases = agent1(user_input)
-    newPhaseList = extract(phases)
+    # here we take the user input and pass it to agent1 to create a list of three phases
+    phases = agent1.delay(user_input).get()
+    newPhaseList = extract.delay(phases).get()
     phaseList.extend(newPhaseList)
-   
+
+    # we use Celery chords to run multiple parallel instances of a given agent
+    # then pass the results to a chord which runs multiple instances of the next agent
     stepList = run_chord(phaseList, agent2)
     substepList = run_chord(stepList, agent3)
     commandList = run_chord(substepList, agent4)
     API_call_list = run_chord(commandList, agent5)
 
-    for phase in phaseList:
-        data[phase] = {}
-
-        for step in stepList:
-            step = complete(step)
-            data[phase][step] = {}
-
-            for substep in substepList:
-                data[phase][step][substep] = {}
-
-                for command in commandList:
-                    data[phase][step][substep][command] = []
-
-                    for API_call in API_call_list:
-                        data[phase][step][substep][command] = [API_call]
-    
+    # now that we've created all the output,
+    # we pass it to a function which puts it in a nested dictionary to print out to display it
+    data = displayOutput(phaseList, stepList, substepList, commandList, API_call_list)
     print(json.dumps(data, indent=4))
+
     return data
     
     

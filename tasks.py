@@ -34,32 +34,32 @@ def complete(prompt):
 
 @app.task
 def agent1(input):
-    time.sleep(5)
-    answer = "We received 1 query of" + input + "and we output lePhase 1, lePhase 2, and lePhase 3"
+    time.sleep(1)
+    answer = "We received 1 query of" + input + " and we output lePhase 1, lePhase 2, and lePhase 3"
     return answer
 
 @app.task
 def agent2(input):
-    time.sleep(5)
-    answer = "We received" + input + "and we output theStep 1, theStep 2, and theStep 3"
+    time.sleep(1)
+    answer = "We received" + input + " and we output theStep 1, theStep 2, and theStep 3"
     return answer
 
 @app.task
 def agent3(input):
-    time.sleep(5)
-    answer = "We received" + input + "and we output Substep 1, Substep 2, and Substep 3"
+    time.sleep(1)
+    answer = "We received" + input + " and we output Substep 1, Substep 2, and Substep 3"
     return answer
 
 @app.task
 def agent4(input):
-    time.sleep(5)
-    answer = "We received" + input + "and we output Command 1, Command 2, and Command 3"
+    time.sleep(1)
+    answer = "We received" + input + " and we output Command 1, Command 2, and Command 3"
     return answer
 
 @app.task
 def agent5(input):
-    time.sleep(5)
-    answer = "We received" + input + "and we output API code in 1 line"
+    time.sleep(1)
+    answer = "We received" + input + " and we output API code in 1 line"
     return answer
 
 @app.task
