@@ -21,14 +21,6 @@ def make_requests():
             }]
         }, metadata={'num': num})
 
-def stepMaker(phaseList):
-    for phase in phaseList:
-        api2.request(data={
-            "messages": [{
-                "role": "user",
-                "content": f"Break this phase of the bio research project into three steps. {phase}"
-            }]
-        }, metadata={'phase': phase})
 
 api.run_request_function(make_requests)
 
@@ -37,6 +29,14 @@ for result in api:
     response = result.response['choices'][0]['message']['content']
     print(f"{num} * {num}:", response)
 
+def stepMaker(phaseList):
+    for phase in phaseList:
+        api2.request(data={
+            "messages": [{
+                "role": "user",
+                "content": f"Break this phase of the bio research project into three steps. {phase}"
+            }]
+        }, metadata={'phase': phase})
 
 api2 = OpenAIMultiOrderedClient(endpoint="chats", data_template={"model": "gpt-3.5-turbo"})
 phaseList = ["Create the plasmid","Clone the plasmid into E. coli","Check for Expression of the Protein"]
