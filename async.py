@@ -13,27 +13,27 @@ load_dotenv('.env')
 openai_api_key = os.getenv('OPENAI_API_KEY')
 
 def generate_serially():
-    llm = OpenAI(temperature=0.9)
+    llm = OpenAI(temperature=0)
     prompt = PromptTemplate(
-        input_variables=["product"],
-        template="What is a good name for a company that makes {product}?",
+        input_variables=["project"],
+        template="Break this biology research project into three phases: {project}",
     )
     chain = LLMChain(llm=llm, prompt=prompt)
     for _ in range(5):
-        resp = chain.run(product="toothpaste")
+        resp = chain.run(project="Make glow in the dark E. coli")
         print(resp)
 
 
 async def async_generate(chain):
-    resp = await chain.arun(product="toothpaste")
+    resp = await chain.arun(project="Make glow in the dark E. coli")
     print(resp)
 
 
 async def generate_concurrently():
-    llm = OpenAI(temperature=0.9)
+    llm = OpenAI(temperature=0)
     prompt = PromptTemplate(
-        input_variables=["product"],
-        template="What is a good name for a company that makes {product}?",
+        input_variables=["project"],
+        template="Break this biology research project into three phases: {project}",
     )
     chain = LLMChain(llm=llm, prompt=prompt)
     tasks = [async_generate(chain) for _ in range(200)]
