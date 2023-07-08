@@ -6,9 +6,9 @@ import openai
 from dotenv import load_dotenv
 
 
-app = Celery('tasks', broker='redis://localhost:6379/0', backend='redis://localhost:6379/0')
+app = Celery('celeryTasks', broker='redis://localhost:6379/0', backend='redis://localhost:6379/0')
 
-# celery -A tasks worker --loglevel=info -c 9
+# celery -A celeryTasks worker --loglevel=info -c 9
 
 # Load environment variables
 load_dotenv('.env')

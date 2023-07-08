@@ -1,4 +1,4 @@
-from tasks import agent1, agent2, agent3, agent4, agent5, extract, process_results, complete
+from celeryTasks import agent1, agent2, agent3, agent4, agent5, extract, process_results, complete
 from celery import group, chain, chord
 import json
 import time
