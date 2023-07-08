@@ -36,7 +36,7 @@ async def generate_concurrently():
         template="What is a good name for a company that makes {product}?",
     )
     chain = LLMChain(llm=llm, prompt=prompt)
-    tasks = [async_generate(chain) for _ in range(5)]
+    tasks = [async_generate(chain) for _ in range(200)]
     await asyncio.gather(*tasks)
 
 s = time.perf_counter()
