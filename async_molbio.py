@@ -71,17 +71,20 @@ def driver(user_input):
     #here we run each layer, which is multiple concurrent requests to a given chain
     layer1 = applyAgent(chain1, user_input)
     print("layer 1 done")
+    print(layer1)
     layer2 = applyAgent(chain2, layer1)
     print("layer 2 done")
+    print(layer2)
     layer3 = applyAgent(chain3, layer2)
     print("layer 3 done")
-    layer4 = applyAgent(chain4, layer3)
-    print("layer 4 done")
+    print(layer3)
+    #layer4 = applyAgent(chain4, layer3)
+    #print("layer 4 done")
     
     # now that we've created all the output,
     # we pass it to a function which puts it in a nested dictionary to print out to display it
-    outputData = displayOutput(layer1, layer2, layer3, layer4)
-    print(json.dumps(outputData, indent=4))
+    #outputData = displayOutput(layer1, layer2, layer3, layer4)
+    #print(json.dumps(outputData, indent=4))
 
     return outputData
 
