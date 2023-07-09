@@ -37,6 +37,7 @@ def applyAgent(chain, inputList):
     finalList = process_results(rawList)
     return finalList
 
+
 def displayOutput(list1, list2, list3, list4, list5):
     data = {}
 
@@ -44,8 +45,6 @@ def displayOutput(list1, list2, list3, list4, list5):
         data[phase] = {}
 
         for step in list2:
-            # this is where we sequentially call the OpenAI API
-            # step = complete(step)
             data[phase][step] = {}
 
             for substep in list3:
@@ -74,11 +73,16 @@ def driver(user_input):
     #here we run each layer, which is multiple concurrent requests to a given chain
     layer1 = applyAgent(chain1, user_input)
     print("layer 1 done")
+    layer1 = [s[:10] for s in layer1]
     print(layer1)
+    print(len(layer1))
     layer2 = applyAgent(chain2, layer1)
+    layer2 = [s[:10] for s in layer2]
     print("layer 2 done")
     print(layer2)
+    print(len(layer2))
     layer3 = applyAgent(chain3, layer2)
+    layer3 = [s[:10] for s in layer3]
     print("layer 3 done")
     print(layer3)
     #layer4 = applyAgent(chain4, layer3)

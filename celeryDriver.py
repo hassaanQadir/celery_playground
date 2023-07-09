@@ -29,8 +29,6 @@ def displayOutput(list1, list2, list3, list4, list5):
         data[phase] = {}
 
         for step in list2:
-            # this is where we sequentially call the OpenAI API
-            # step = complete(step)
             data[phase][step] = {}
 
             for substep in list3:
@@ -60,13 +58,17 @@ def driver(user_input):
     # we use Celery chords to run multiple parallel instances of a given agent
     # then pass the results to a chord which runs multiple instances of the next agent
     stepList = run_chord(phaseList, agent2)
+    print(stepList)
+    print(len(stepList))
     substepList = run_chord(stepList, agent3)
+    print(substepList)
+    print(len(substepList))
     commandList = run_chord(substepList, agent4)
     API_call_list = run_chord(commandList, agent5)
 
     # now that we've created all the output,
     # we pass it to a function which puts it in a nested dictionary to print out to display it
-    data = displayOutput(phaseList, stepList, substepList, commandList, API_call_list)
+    data = displayOutput(phaseList, stepList, substepList, [], [])
     print(json.dumps(data, indent=4))
 
     return data
