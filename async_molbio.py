@@ -37,7 +37,7 @@ def applyAgent(chain, inputList):
     finalList = process_results(rawList)
     return finalList
 
-def displayOutput(list1, list2, list3, list4):
+def displayOutput(list1, list2, list3, list4, list5):
     data = {}
 
     for phase in list1:
@@ -49,10 +49,13 @@ def displayOutput(list1, list2, list3, list4):
             data[phase][step] = {}
 
             for substep in list3:
-                data[phase][step][substep] = {}
+                data[phase][step][substep] = []
 
-                for command in list4:
-                    data[phase][step][substep][command] = []
+                #for command in list4:
+                #    data[phase][step][substep][command] = []
+
+                    #for API_call in list5:
+                    #    data[phase][step][substep][command] = [API_call]
     
     return data
 
@@ -83,8 +86,8 @@ def driver(user_input):
     
     # now that we've created all the output,
     # we pass it to a function which puts it in a nested dictionary to print out to display it
-    #outputData = displayOutput(layer1, layer2, layer3, layer4)
-    #print(json.dumps(outputData, indent=4))
+    outputData = displayOutput(layer1, layer2, layer3, [], [])
+    print(json.dumps(outputData, indent=4))
 
     return outputData
 

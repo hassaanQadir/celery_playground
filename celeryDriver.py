@@ -34,13 +34,13 @@ def displayOutput(list1, list2, list3, list4, list5):
             data[phase][step] = {}
 
             for substep in list3:
-                data[phase][step][substep] = {}
+                data[phase][step][substep] = []
 
-                for command in list4:
-                    data[phase][step][substep][command] = []
+                #for command in list4:
+                #    data[phase][step][substep][command] = []
 
-                    for API_call in list5:
-                        data[phase][step][substep][command] = [API_call]
+                    #for API_call in list5:
+                    #    data[phase][step][substep][command] = [API_call]
     
     return data
 
