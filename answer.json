@@ -1,0 +1,386 @@
+{
+    "Phase 1: Gene Selection and Cloning\nIn this phase, you will select the genes responsible for bioluminescence and clone them into the E. coli genome. You will need to identify and isolate the genes from a bioluminescent organism, such as a firefly or jellyfish, and design primers for PCR amplification. Once amplified, the genes will be ligated into a suitable plasmid vector for cloning into E. coli.\n\n": {
+        " Step 1: Gene Identification and Isolation\nStart by identifying and isolating the genes responsible for bioluminescence from a bioluminescent organism, such as a firefly or jellyfish. This can be done by conducting a literature search to identify known bioluminescent genes or by using molecular biology techniques like PCR or DNA sequencing to identify and isolate the genes directly from the organism's genome. Once isolated, purify the DNA containing the bioluminescent genes using methods like phenol-chloroform extraction or commercial DNA purification kits.\n\n": {
+            " Substep 1: Conduct a literature search to identify known bioluminescent genes or sequences. This can involve searching scientific databases, journals, and other relevant sources to gather information on the genes responsible for bioluminescence in different organisms.\n": [
+                " Line 1: Access scientific databases and journals.\n",
+                " Line 2: Search for bioluminescent genes or sequences.\n",
+                " Line 3: Gather information on genes responsible for bioluminescence in different organisms."
+            ],
+            " Substep 2: If known bioluminescent genes are identified, design primers specific to these genes for PCR amplification. If no known genes are found, design primers based on conserved regions of bioluminescent genes from related organisms.\n": [
+                " Line 1: Access scientific databases and journals.\n",
+                " Line 2: Search for bioluminescent genes or sequences.\n",
+                " Line 3: Gather information on genes responsible for bioluminescence in different organisms."
+            ],
+            " Substep 3: Obtain a sample of the bioluminescent organism or its genomic DNA. This can be obtained from a culture, tissue sample, or commercial source.\n": [
+                " Line 1: Access scientific databases and journals.\n",
+                " Line 2: Search for bioluminescent genes or sequences.\n",
+                " Line 3: Gather information on genes responsible for bioluminescence in different organisms."
+            ],
+            " Substep 4: Perform PCR using the designed primers and the genomic DNA as a template. Optimize PCR conditions to ensure specific amplification of the target genes.\n": [
+                " Line 1: Access scientific databases and journals.\n",
+                " Line 2: Search for bioluminescent genes or sequences.\n",
+                " Line 3: Gather information on genes responsible for bioluminescence in different organisms."
+            ],
+            " Substep 5: Analyze the PCR products by agarose gel electrophoresis to confirm successful amplification of the target genes. Purify the PCR products using a DNA purification kit or by phenol-chloroform extraction.\n": [
+                " Line 1: Access scientific databases and journals.\n",
+                " Line 2: Search for bioluminescent genes or sequences.\n",
+                " Line 3: Gather information on genes responsible for bioluminescence in different organisms."
+            ],
+            " Substep 6: Clone the purified DNA fragments into a suitable vector, such as a plasmid, using molecular cloning techniques like restriction enzyme digestion and ligation. Transform the recombinant plasmids into competent E. coli cells.\n": [
+                " Line 1: Access scientific databases and journals.\n",
+                " Line 2: Search for bioluminescent genes or sequences.\n",
+                " Line 3: Gather information on genes responsible for bioluminescence in different organisms."
+            ],
+            " Substep 7: Select transformed E. coli cells containing the recombinant plasmids using antibiotic selection. This ensures that only cells with the desired genes are retained.\n": [
+                " Line 1: Access scientific databases and journals.\n",
+                " Line 2: Search for bioluminescent genes or sequences.\n",
+                " Line 3: Gather information on genes responsible for bioluminescence in different organisms."
+            ],
+            " Substep 8: Verify the presence of the bioluminescent genes in the transformed E. coli cells by performing colony PCR or DNA sequencing.": [
+                " Line 1: Access scientific databases and journals.\n",
+                " Line 2: Search for bioluminescent genes or sequences.\n",
+                " Line 3: Gather information on genes responsible for bioluminescence in different organisms."
+            ]
+        },
+        " Step 2: Primer Design and PCR Amplification\nDesign specific primers that will allow for the amplification of the isolated bioluminescent genes by PCR. The primers should have sequences that are complementary to the regions flanking the genes of interest. Use software tools like Primer3 to design primers with appropriate melting temperatures and minimal secondary structure formation. Once designed, perform PCR amplification using the isolated DNA as a template and the designed primers. Optimize the PCR conditions, including annealing temperature and cycle number, to ensure efficient and specific amplification of the bioluminescent genes.\n\n": {
+            " Substep 1: Conduct a literature search to identify known bioluminescent genes or sequences. This can involve searching scientific databases, journals, and other relevant sources to gather information on the genes responsible for bioluminescence in different organisms.\n": [
+                " Line 1: Access scientific databases and journals.\n",
+                " Line 2: Search for bioluminescent genes or sequences.\n",
+                " Line 3: Gather information on genes responsible for bioluminescence in different organisms."
+            ],
+            " Substep 2: If known bioluminescent genes are identified, design primers specific to these genes for PCR amplification. If no known genes are found, design primers based on conserved regions of bioluminescent genes from related organisms.\n": [
+                " Line 1: Access scientific databases and journals.\n",
+                " Line 2: Search for bioluminescent genes or sequences.\n",
+                " Line 3: Gather information on genes responsible for bioluminescence in different organisms."
+            ],
+            " Substep 3: Obtain a sample of the bioluminescent organism or its genomic DNA. This can be obtained from a culture, tissue sample, or commercial source.\n": [
+                " Line 1: Access scientific databases and journals.\n",
+                " Line 2: Search for bioluminescent genes or sequences.\n",
+                " Line 3: Gather information on genes responsible for bioluminescence in different organisms."
+            ],
+            " Substep 4: Perform PCR using the designed primers and the genomic DNA as a template. Optimize PCR conditions to ensure specific amplification of the target genes.\n": [
+                " Line 1: Access scientific databases and journals.\n",
+                " Line 2: Search for bioluminescent genes or sequences.\n",
+                " Line 3: Gather information on genes responsible for bioluminescence in different organisms."
+            ],
+            " Substep 5: Analyze the PCR products by agarose gel electrophoresis to confirm successful amplification of the target genes. Purify the PCR products using a DNA purification kit or by phenol-chloroform extraction.\n": [
+                " Line 1: Access scientific databases and journals.\n",
+                " Line 2: Search for bioluminescent genes or sequences.\n",
+                " Line 3: Gather information on genes responsible for bioluminescence in different organisms."
+            ],
+            " Substep 6: Clone the purified DNA fragments into a suitable vector, such as a plasmid, using molecular cloning techniques like restriction enzyme digestion and ligation. Transform the recombinant plasmids into competent E. coli cells.\n": [
+                " Line 1: Access scientific databases and journals.\n",
+                " Line 2: Search for bioluminescent genes or sequences.\n",
+                " Line 3: Gather information on genes responsible for bioluminescence in different organisms."
+            ],
+            " Substep 7: Select transformed E. coli cells containing the recombinant plasmids using antibiotic selection. This ensures that only cells with the desired genes are retained.\n": [
+                " Line 1: Access scientific databases and journals.\n",
+                " Line 2: Search for bioluminescent genes or sequences.\n",
+                " Line 3: Gather information on genes responsible for bioluminescence in different organisms."
+            ],
+            " Substep 8: Verify the presence of the bioluminescent genes in the transformed E. coli cells by performing colony PCR or DNA sequencing.": [
+                " Line 1: Access scientific databases and journals.\n",
+                " Line 2: Search for bioluminescent genes or sequences.\n",
+                " Line 3: Gather information on genes responsible for bioluminescence in different organisms."
+            ]
+        },
+        " Step 3: Ligation into Plasmid Vector\nAfter PCR amplification, purify the amplified bioluminescent genes using methods like gel extraction or commercial PCR purification kits. Next, prepare a suitable plasmid vector for cloning the genes into E. coli. This vector should have features like a selectable marker (e.g., antibiotic resistance gene) and a multiple cloning site (MCS) for easy insertion of the genes. Use restriction enzymes to digest the plasmid vector and the purified PCR products, generating compatible ends for ligation. Then, ligate the bioluminescent genes into the plasmid vector using DNA ligase. Transform the ligated plasmid into E. coli cells for propagation and further analysis.": {
+            " Substep 1: Conduct a literature search to identify known bioluminescent genes or sequences. This can involve searching scientific databases, journals, and other relevant sources to gather information on the genes responsible for bioluminescence in different organisms.\n": [
+                " Line 1: Access scientific databases and journals.\n",
+                " Line 2: Search for bioluminescent genes or sequences.\n",
+                " Line 3: Gather information on genes responsible for bioluminescence in different organisms."
+            ],
+            " Substep 2: If known bioluminescent genes are identified, design primers specific to these genes for PCR amplification. If no known genes are found, design primers based on conserved regions of bioluminescent genes from related organisms.\n": [
+                " Line 1: Access scientific databases and journals.\n",
+                " Line 2: Search for bioluminescent genes or sequences.\n",
+                " Line 3: Gather information on genes responsible for bioluminescence in different organisms."
+            ],
+            " Substep 3: Obtain a sample of the bioluminescent organism or its genomic DNA. This can be obtained from a culture, tissue sample, or commercial source.\n": [
+                " Line 1: Access scientific databases and journals.\n",
+                " Line 2: Search for bioluminescent genes or sequences.\n",
+                " Line 3: Gather information on genes responsible for bioluminescence in different organisms."
+            ],
+            " Substep 4: Perform PCR using the designed primers and the genomic DNA as a template. Optimize PCR conditions to ensure specific amplification of the target genes.\n": [
+                " Line 1: Access scientific databases and journals.\n",
+                " Line 2: Search for bioluminescent genes or sequences.\n",
+                " Line 3: Gather information on genes responsible for bioluminescence in different organisms."
+            ],
+            " Substep 5: Analyze the PCR products by agarose gel electrophoresis to confirm successful amplification of the target genes. Purify the PCR products using a DNA purification kit or by phenol-chloroform extraction.\n": [
+                " Line 1: Access scientific databases and journals.\n",
+                " Line 2: Search for bioluminescent genes or sequences.\n",
+                " Line 3: Gather information on genes responsible for bioluminescence in different organisms."
+            ],
+            " Substep 6: Clone the purified DNA fragments into a suitable vector, such as a plasmid, using molecular cloning techniques like restriction enzyme digestion and ligation. Transform the recombinant plasmids into competent E. coli cells.\n": [
+                " Line 1: Access scientific databases and journals.\n",
+                " Line 2: Search for bioluminescent genes or sequences.\n",
+                " Line 3: Gather information on genes responsible for bioluminescence in different organisms."
+            ],
+            " Substep 7: Select transformed E. coli cells containing the recombinant plasmids using antibiotic selection. This ensures that only cells with the desired genes are retained.\n": [
+                " Line 1: Access scientific databases and journals.\n",
+                " Line 2: Search for bioluminescent genes or sequences.\n",
+                " Line 3: Gather information on genes responsible for bioluminescence in different organisms."
+            ],
+            " Substep 8: Verify the presence of the bioluminescent genes in the transformed E. coli cells by performing colony PCR or DNA sequencing.": [
+                " Line 1: Access scientific databases and journals.\n",
+                " Line 2: Search for bioluminescent genes or sequences.\n",
+                " Line 3: Gather information on genes responsible for bioluminescence in different organisms."
+            ]
+        }
+    },
+    "Phase 2: Transformation and Screening\nIn this phase, you will transform the recombinant plasmid carrying the bioluminescent genes into E. coli and screen for positive clones. You will need to optimize the transformation conditions and select the appropriate antibiotic resistance marker for selection of positive clones. Positive clones will exhibit bioluminescence under specific conditions.\n\n": {
+        " Step 1: Gene Identification and Isolation\nStart by identifying and isolating the genes responsible for bioluminescence from a bioluminescent organism, such as a firefly or jellyfish. This can be done by conducting a literature search to identify known bioluminescent genes or by using molecular biology techniques like PCR or DNA sequencing to identify and isolate the genes directly from the organism's genome. Once isolated, purify the DNA containing the bioluminescent genes using methods like phenol-chloroform extraction or commercial DNA purification kits.\n\n": {
+            " Substep 1: Conduct a literature search to identify known bioluminescent genes or sequences. This can involve searching scientific databases, journals, and other relevant sources to gather information on the genes responsible for bioluminescence in different organisms.\n": [
+                " Line 1: Access scientific databases and journals.\n",
+                " Line 2: Search for bioluminescent genes or sequences.\n",
+                " Line 3: Gather information on genes responsible for bioluminescence in different organisms."
+            ],
+            " Substep 2: If known bioluminescent genes are identified, design primers specific to these genes for PCR amplification. If no known genes are found, design primers based on conserved regions of bioluminescent genes from related organisms.\n": [
+                " Line 1: Access scientific databases and journals.\n",
+                " Line 2: Search for bioluminescent genes or sequences.\n",
+                " Line 3: Gather information on genes responsible for bioluminescence in different organisms."
+            ],
+            " Substep 3: Obtain a sample of the bioluminescent organism or its genomic DNA. This can be obtained from a culture, tissue sample, or commercial source.\n": [
+                " Line 1: Access scientific databases and journals.\n",
+                " Line 2: Search for bioluminescent genes or sequences.\n",
+                " Line 3: Gather information on genes responsible for bioluminescence in different organisms."
+            ],
+            " Substep 4: Perform PCR using the designed primers and the genomic DNA as a template. Optimize PCR conditions to ensure specific amplification of the target genes.\n": [
+                " Line 1: Access scientific databases and journals.\n",
+                " Line 2: Search for bioluminescent genes or sequences.\n",
+                " Line 3: Gather information on genes responsible for bioluminescence in different organisms."
+            ],
+            " Substep 5: Analyze the PCR products by agarose gel electrophoresis to confirm successful amplification of the target genes. Purify the PCR products using a DNA purification kit or by phenol-chloroform extraction.\n": [
+                " Line 1: Access scientific databases and journals.\n",
+                " Line 2: Search for bioluminescent genes or sequences.\n",
+                " Line 3: Gather information on genes responsible for bioluminescence in different organisms."
+            ],
+            " Substep 6: Clone the purified DNA fragments into a suitable vector, such as a plasmid, using molecular cloning techniques like restriction enzyme digestion and ligation. Transform the recombinant plasmids into competent E. coli cells.\n": [
+                " Line 1: Access scientific databases and journals.\n",
+                " Line 2: Search for bioluminescent genes or sequences.\n",
+                " Line 3: Gather information on genes responsible for bioluminescence in different organisms."
+            ],
+            " Substep 7: Select transformed E. coli cells containing the recombinant plasmids using antibiotic selection. This ensures that only cells with the desired genes are retained.\n": [
+                " Line 1: Access scientific databases and journals.\n",
+                " Line 2: Search for bioluminescent genes or sequences.\n",
+                " Line 3: Gather information on genes responsible for bioluminescence in different organisms."
+            ],
+            " Substep 8: Verify the presence of the bioluminescent genes in the transformed E. coli cells by performing colony PCR or DNA sequencing.": [
+                " Line 1: Access scientific databases and journals.\n",
+                " Line 2: Search for bioluminescent genes or sequences.\n",
+                " Line 3: Gather information on genes responsible for bioluminescence in different organisms."
+            ]
+        },
+        " Step 2: Primer Design and PCR Amplification\nDesign specific primers that will allow for the amplification of the isolated bioluminescent genes by PCR. The primers should have sequences that are complementary to the regions flanking the genes of interest. Use software tools like Primer3 to design primers with appropriate melting temperatures and minimal secondary structure formation. Once designed, perform PCR amplification using the isolated DNA as a template and the designed primers. Optimize the PCR conditions, including annealing temperature and cycle number, to ensure efficient and specific amplification of the bioluminescent genes.\n\n": {
+            " Substep 1: Conduct a literature search to identify known bioluminescent genes or sequences. This can involve searching scientific databases, journals, and other relevant sources to gather information on the genes responsible for bioluminescence in different organisms.\n": [
+                " Line 1: Access scientific databases and journals.\n",
+                " Line 2: Search for bioluminescent genes or sequences.\n",
+                " Line 3: Gather information on genes responsible for bioluminescence in different organisms."
+            ],
+            " Substep 2: If known bioluminescent genes are identified, design primers specific to these genes for PCR amplification. If no known genes are found, design primers based on conserved regions of bioluminescent genes from related organisms.\n": [
+                " Line 1: Access scientific databases and journals.\n",
+                " Line 2: Search for bioluminescent genes or sequences.\n",
+                " Line 3: Gather information on genes responsible for bioluminescence in different organisms."
+            ],
+            " Substep 3: Obtain a sample of the bioluminescent organism or its genomic DNA. This can be obtained from a culture, tissue sample, or commercial source.\n": [
+                " Line 1: Access scientific databases and journals.\n",
+                " Line 2: Search for bioluminescent genes or sequences.\n",
+                " Line 3: Gather information on genes responsible for bioluminescence in different organisms."
+            ],
+            " Substep 4: Perform PCR using the designed primers and the genomic DNA as a template. Optimize PCR conditions to ensure specific amplification of the target genes.\n": [
+                " Line 1: Access scientific databases and journals.\n",
+                " Line 2: Search for bioluminescent genes or sequences.\n",
+                " Line 3: Gather information on genes responsible for bioluminescence in different organisms."
+            ],
+            " Substep 5: Analyze the PCR products by agarose gel electrophoresis to confirm successful amplification of the target genes. Purify the PCR products using a DNA purification kit or by phenol-chloroform extraction.\n": [
+                " Line 1: Access scientific databases and journals.\n",
+                " Line 2: Search for bioluminescent genes or sequences.\n",
+                " Line 3: Gather information on genes responsible for bioluminescence in different organisms."
+            ],
+            " Substep 6: Clone the purified DNA fragments into a suitable vector, such as a plasmid, using molecular cloning techniques like restriction enzyme digestion and ligation. Transform the recombinant plasmids into competent E. coli cells.\n": [
+                " Line 1: Access scientific databases and journals.\n",
+                " Line 2: Search for bioluminescent genes or sequences.\n",
+                " Line 3: Gather information on genes responsible for bioluminescence in different organisms."
+            ],
+            " Substep 7: Select transformed E. coli cells containing the recombinant plasmids using antibiotic selection. This ensures that only cells with the desired genes are retained.\n": [
+                " Line 1: Access scientific databases and journals.\n",
+                " Line 2: Search for bioluminescent genes or sequences.\n",
+                " Line 3: Gather information on genes responsible for bioluminescence in different organisms."
+            ],
+            " Substep 8: Verify the presence of the bioluminescent genes in the transformed E. coli cells by performing colony PCR or DNA sequencing.": [
+                " Line 1: Access scientific databases and journals.\n",
+                " Line 2: Search for bioluminescent genes or sequences.\n",
+                " Line 3: Gather information on genes responsible for bioluminescence in different organisms."
+            ]
+        },
+        " Step 3: Ligation into Plasmid Vector\nAfter PCR amplification, purify the amplified bioluminescent genes using methods like gel extraction or commercial PCR purification kits. Next, prepare a suitable plasmid vector for cloning the genes into E. coli. This vector should have features like a selectable marker (e.g., antibiotic resistance gene) and a multiple cloning site (MCS) for easy insertion of the genes. Use restriction enzymes to digest the plasmid vector and the purified PCR products, generating compatible ends for ligation. Then, ligate the bioluminescent genes into the plasmid vector using DNA ligase. Transform the ligated plasmid into E. coli cells for propagation and further analysis.": {
+            " Substep 1: Conduct a literature search to identify known bioluminescent genes or sequences. This can involve searching scientific databases, journals, and other relevant sources to gather information on the genes responsible for bioluminescence in different organisms.\n": [
+                " Line 1: Access scientific databases and journals.\n",
+                " Line 2: Search for bioluminescent genes or sequences.\n",
+                " Line 3: Gather information on genes responsible for bioluminescence in different organisms."
+            ],
+            " Substep 2: If known bioluminescent genes are identified, design primers specific to these genes for PCR amplification. If no known genes are found, design primers based on conserved regions of bioluminescent genes from related organisms.\n": [
+                " Line 1: Access scientific databases and journals.\n",
+                " Line 2: Search for bioluminescent genes or sequences.\n",
+                " Line 3: Gather information on genes responsible for bioluminescence in different organisms."
+            ],
+            " Substep 3: Obtain a sample of the bioluminescent organism or its genomic DNA. This can be obtained from a culture, tissue sample, or commercial source.\n": [
+                " Line 1: Access scientific databases and journals.\n",
+                " Line 2: Search for bioluminescent genes or sequences.\n",
+                " Line 3: Gather information on genes responsible for bioluminescence in different organisms."
+            ],
+            " Substep 4: Perform PCR using the designed primers and the genomic DNA as a template. Optimize PCR conditions to ensure specific amplification of the target genes.\n": [
+                " Line 1: Access scientific databases and journals.\n",
+                " Line 2: Search for bioluminescent genes or sequences.\n",
+                " Line 3: Gather information on genes responsible for bioluminescence in different organisms."
+            ],
+            " Substep 5: Analyze the PCR products by agarose gel electrophoresis to confirm successful amplification of the target genes. Purify the PCR products using a DNA purification kit or by phenol-chloroform extraction.\n": [
+                " Line 1: Access scientific databases and journals.\n",
+                " Line 2: Search for bioluminescent genes or sequences.\n",
+                " Line 3: Gather information on genes responsible for bioluminescence in different organisms."
+            ],
+            " Substep 6: Clone the purified DNA fragments into a suitable vector, such as a plasmid, using molecular cloning techniques like restriction enzyme digestion and ligation. Transform the recombinant plasmids into competent E. coli cells.\n": [
+                " Line 1: Access scientific databases and journals.\n",
+                " Line 2: Search for bioluminescent genes or sequences.\n",
+                " Line 3: Gather information on genes responsible for bioluminescence in different organisms."
+            ],
+            " Substep 7: Select transformed E. coli cells containing the recombinant plasmids using antibiotic selection. This ensures that only cells with the desired genes are retained.\n": [
+                " Line 1: Access scientific databases and journals.\n",
+                " Line 2: Search for bioluminescent genes or sequences.\n",
+                " Line 3: Gather information on genes responsible for bioluminescence in different organisms."
+            ],
+            " Substep 8: Verify the presence of the bioluminescent genes in the transformed E. coli cells by performing colony PCR or DNA sequencing.": [
+                " Line 1: Access scientific databases and journals.\n",
+                " Line 2: Search for bioluminescent genes or sequences.\n",
+                " Line 3: Gather information on genes responsible for bioluminescence in different organisms."
+            ]
+        }
+    },
+    "Phase 3: Expression and Optimization\nIn this phase, you will optimize the expression of the bioluminescent genes in E. coli to maximize the production of the glowing protein. You will need to optimize growth conditions, such as temperature, media composition, and inducer concentration, to enhance the expression of the bioluminescent genes. Additionally, you may need to perform mutagenesis or genetic engineering to improve the brightness and stability of the glow in the dark E. coli.": {
+        " Step 1: Gene Identification and Isolation\nStart by identifying and isolating the genes responsible for bioluminescence from a bioluminescent organism, such as a firefly or jellyfish. This can be done by conducting a literature search to identify known bioluminescent genes or by using molecular biology techniques like PCR or DNA sequencing to identify and isolate the genes directly from the organism's genome. Once isolated, purify the DNA containing the bioluminescent genes using methods like phenol-chloroform extraction or commercial DNA purification kits.\n\n": {
+            " Substep 1: Conduct a literature search to identify known bioluminescent genes or sequences. This can involve searching scientific databases, journals, and other relevant sources to gather information on the genes responsible for bioluminescence in different organisms.\n": [
+                " Line 1: Access scientific databases and journals.\n",
+                " Line 2: Search for bioluminescent genes or sequences.\n",
+                " Line 3: Gather information on genes responsible for bioluminescence in different organisms."
+            ],
+            " Substep 2: If known bioluminescent genes are identified, design primers specific to these genes for PCR amplification. If no known genes are found, design primers based on conserved regions of bioluminescent genes from related organisms.\n": [
+                " Line 1: Access scientific databases and journals.\n",
+                " Line 2: Search for bioluminescent genes or sequences.\n",
+                " Line 3: Gather information on genes responsible for bioluminescence in different organisms."
+            ],
+            " Substep 3: Obtain a sample of the bioluminescent organism or its genomic DNA. This can be obtained from a culture, tissue sample, or commercial source.\n": [
+                " Line 1: Access scientific databases and journals.\n",
+                " Line 2: Search for bioluminescent genes or sequences.\n",
+                " Line 3: Gather information on genes responsible for bioluminescence in different organisms."
+            ],
+            " Substep 4: Perform PCR using the designed primers and the genomic DNA as a template. Optimize PCR conditions to ensure specific amplification of the target genes.\n": [
+                " Line 1: Access scientific databases and journals.\n",
+                " Line 2: Search for bioluminescent genes or sequences.\n",
+                " Line 3: Gather information on genes responsible for bioluminescence in different organisms."
+            ],
+            " Substep 5: Analyze the PCR products by agarose gel electrophoresis to confirm successful amplification of the target genes. Purify the PCR products using a DNA purification kit or by phenol-chloroform extraction.\n": [
+                " Line 1: Access scientific databases and journals.\n",
+                " Line 2: Search for bioluminescent genes or sequences.\n",
+                " Line 3: Gather information on genes responsible for bioluminescence in different organisms."
+            ],
+            " Substep 6: Clone the purified DNA fragments into a suitable vector, such as a plasmid, using molecular cloning techniques like restriction enzyme digestion and ligation. Transform the recombinant plasmids into competent E. coli cells.\n": [
+                " Line 1: Access scientific databases and journals.\n",
+                " Line 2: Search for bioluminescent genes or sequences.\n",
+                " Line 3: Gather information on genes responsible for bioluminescence in different organisms."
+            ],
+            " Substep 7: Select transformed E. coli cells containing the recombinant plasmids using antibiotic selection. This ensures that only cells with the desired genes are retained.\n": [
+                " Line 1: Access scientific databases and journals.\n",
+                " Line 2: Search for bioluminescent genes or sequences.\n",
+                " Line 3: Gather information on genes responsible for bioluminescence in different organisms."
+            ],
+            " Substep 8: Verify the presence of the bioluminescent genes in the transformed E. coli cells by performing colony PCR or DNA sequencing.": [
+                " Line 1: Access scientific databases and journals.\n",
+                " Line 2: Search for bioluminescent genes or sequences.\n",
+                " Line 3: Gather information on genes responsible for bioluminescence in different organisms."
+            ]
+        },
+        " Step 2: Primer Design and PCR Amplification\nDesign specific primers that will allow for the amplification of the isolated bioluminescent genes by PCR. The primers should have sequences that are complementary to the regions flanking the genes of interest. Use software tools like Primer3 to design primers with appropriate melting temperatures and minimal secondary structure formation. Once designed, perform PCR amplification using the isolated DNA as a template and the designed primers. Optimize the PCR conditions, including annealing temperature and cycle number, to ensure efficient and specific amplification of the bioluminescent genes.\n\n": {
+            " Substep 1: Conduct a literature search to identify known bioluminescent genes or sequences. This can involve searching scientific databases, journals, and other relevant sources to gather information on the genes responsible for bioluminescence in different organisms.\n": [
+                " Line 1: Access scientific databases and journals.\n",
+                " Line 2: Search for bioluminescent genes or sequences.\n",
+                " Line 3: Gather information on genes responsible for bioluminescence in different organisms."
+            ],
+            " Substep 2: If known bioluminescent genes are identified, design primers specific to these genes for PCR amplification. If no known genes are found, design primers based on conserved regions of bioluminescent genes from related organisms.\n": [
+                " Line 1: Access scientific databases and journals.\n",
+                " Line 2: Search for bioluminescent genes or sequences.\n",
+                " Line 3: Gather information on genes responsible for bioluminescence in different organisms."
+            ],
+            " Substep 3: Obtain a sample of the bioluminescent organism or its genomic DNA. This can be obtained from a culture, tissue sample, or commercial source.\n": [
+                " Line 1: Access scientific databases and journals.\n",
+                " Line 2: Search for bioluminescent genes or sequences.\n",
+                " Line 3: Gather information on genes responsible for bioluminescence in different organisms."
+            ],
+            " Substep 4: Perform PCR using the designed primers and the genomic DNA as a template. Optimize PCR conditions to ensure specific amplification of the target genes.\n": [
+                " Line 1: Access scientific databases and journals.\n",
+                " Line 2: Search for bioluminescent genes or sequences.\n",
+                " Line 3: Gather information on genes responsible for bioluminescence in different organisms."
+            ],
+            " Substep 5: Analyze the PCR products by agarose gel electrophoresis to confirm successful amplification of the target genes. Purify the PCR products using a DNA purification kit or by phenol-chloroform extraction.\n": [
+                " Line 1: Access scientific databases and journals.\n",
+                " Line 2: Search for bioluminescent genes or sequences.\n",
+                " Line 3: Gather information on genes responsible for bioluminescence in different organisms."
+            ],
+            " Substep 6: Clone the purified DNA fragments into a suitable vector, such as a plasmid, using molecular cloning techniques like restriction enzyme digestion and ligation. Transform the recombinant plasmids into competent E. coli cells.\n": [
+                " Line 1: Access scientific databases and journals.\n",
+                " Line 2: Search for bioluminescent genes or sequences.\n",
+                " Line 3: Gather information on genes responsible for bioluminescence in different organisms."
+            ],
+            " Substep 7: Select transformed E. coli cells containing the recombinant plasmids using antibiotic selection. This ensures that only cells with the desired genes are retained.\n": [
+                " Line 1: Access scientific databases and journals.\n",
+                " Line 2: Search for bioluminescent genes or sequences.\n",
+                " Line 3: Gather information on genes responsible for bioluminescence in different organisms."
+            ],
+            " Substep 8: Verify the presence of the bioluminescent genes in the transformed E. coli cells by performing colony PCR or DNA sequencing.": [
+                " Line 1: Access scientific databases and journals.\n",
+                " Line 2: Search for bioluminescent genes or sequences.\n",
+                " Line 3: Gather information on genes responsible for bioluminescence in different organisms."
+            ]
+        },
+        " Step 3: Ligation into Plasmid Vector\nAfter PCR amplification, purify the amplified bioluminescent genes using methods like gel extraction or commercial PCR purification kits. Next, prepare a suitable plasmid vector for cloning the genes into E. coli. This vector should have features like a selectable marker (e.g., antibiotic resistance gene) and a multiple cloning site (MCS) for easy insertion of the genes. Use restriction enzymes to digest the plasmid vector and the purified PCR products, generating compatible ends for ligation. Then, ligate the bioluminescent genes into the plasmid vector using DNA ligase. Transform the ligated plasmid into E. coli cells for propagation and further analysis.": {
+            " Substep 1: Conduct a literature search to identify known bioluminescent genes or sequences. This can involve searching scientific databases, journals, and other relevant sources to gather information on the genes responsible for bioluminescence in different organisms.\n": [
+                " Line 1: Access scientific databases and journals.\n",
+                " Line 2: Search for bioluminescent genes or sequences.\n",
+                " Line 3: Gather information on genes responsible for bioluminescence in different organisms."
+            ],
+            " Substep 2: If known bioluminescent genes are identified, design primers specific to these genes for PCR amplification. If no known genes are found, design primers based on conserved regions of bioluminescent genes from related organisms.\n": [
+                " Line 1: Access scientific databases and journals.\n",
+                " Line 2: Search for bioluminescent genes or sequences.\n",
+                " Line 3: Gather information on genes responsible for bioluminescence in different organisms."
+            ],
+            " Substep 3: Obtain a sample of the bioluminescent organism or its genomic DNA. This can be obtained from a culture, tissue sample, or commercial source.\n": [
+                " Line 1: Access scientific databases and journals.\n",
+                " Line 2: Search for bioluminescent genes or sequences.\n",
+                " Line 3: Gather information on genes responsible for bioluminescence in different organisms."
+            ],
+            " Substep 4: Perform PCR using the designed primers and the genomic DNA as a template. Optimize PCR conditions to ensure specific amplification of the target genes.\n": [
+                " Line 1: Access scientific databases and journals.\n",
+                " Line 2: Search for bioluminescent genes or sequences.\n",
+                " Line 3: Gather information on genes responsible for bioluminescence in different organisms."
+            ],
+            " Substep 5: Analyze the PCR products by agarose gel electrophoresis to confirm successful amplification of the target genes. Purify the PCR products using a DNA purification kit or by phenol-chloroform extraction.\n": [
+                " Line 1: Access scientific databases and journals.\n",
+                " Line 2: Search for bioluminescent genes or sequences.\n",
+                " Line 3: Gather information on genes responsible for bioluminescence in different organisms."
+            ],
+            " Substep 6: Clone the purified DNA fragments into a suitable vector, such as a plasmid, using molecular cloning techniques like restriction enzyme digestion and ligation. Transform the recombinant plasmids into competent E. coli cells.\n": [
+                " Line 1: Access scientific databases and journals.\n",
+                " Line 2: Search for bioluminescent genes or sequences.\n",
+                " Line 3: Gather information on genes responsible for bioluminescence in different organisms."
+            ],
+            " Substep 7: Select transformed E. coli cells containing the recombinant plasmids using antibiotic selection. This ensures that only cells with the desired genes are retained.\n": [
+                " Line 1: Access scientific databases and journals.\n",
+                " Line 2: Search for bioluminescent genes or sequences.\n",
+                " Line 3: Gather information on genes responsible for bioluminescence in different organisms."
+            ],
+            " Substep 8: Verify the presence of the bioluminescent genes in the transformed E. coli cells by performing colony PCR or DNA sequencing.": [
+                " Line 1: Access scientific databases and journals.\n",
+                " Line 2: Search for bioluminescent genes or sequences.\n",
+                " Line 3: Gather information on genes responsible for bioluminescence in different organisms."
+            ]
+        }
+    }
+}
