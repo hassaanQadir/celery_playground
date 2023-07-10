@@ -123,4 +123,13 @@ def driver(user_input):
 
     return outputData
 
-driver("Make yeast that can detect equol")
+def test(user_input):
+    time.sleep(30)
+    user_input += "Successfully accessed\n"
+    user_input += "the molbio.ai"
+    return user_input
+
+if __name__ == "__main__":
+   answer = main("Make glow in the dark e. coli")
+   with open('answer.json', 'w') as f:
+    f.write(answer) 
