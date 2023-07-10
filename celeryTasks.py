@@ -1,4 +1,4 @@
-from celery import Celery, group, chord
+""" from celery import Celery, group, chord
 import time
 import re
 import os
@@ -81,3 +81,4 @@ def process_results(results):
     for result in results:
         theList.extend(result)
     return theList
+ """

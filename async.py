@@ -1,4 +1,4 @@
-import time
+""" import time
 import asyncio
 from dotenv import load_dotenv
 import os
@@ -78,4 +78,4 @@ print("\033[1m" + f"Concurrent executed in {elapsed:0.2f} seconds." + "\033[0m")
 s = time.perf_counter()
 generate_serially()
 elapsed = time.perf_counter() - s
-print("\033[1m" + f"Serial executed in {elapsed:0.2f} seconds." + "\033[0m")
+print("\033[1m" + f"Serial executed in {elapsed:0.2f} seconds." + "\033[0m") """

@@ -1,4 +1,4 @@
-import openai
+""" import openai
 from dotenv import load_dotenv
 import os
 from openai_multi_client import OpenAIMultiOrderedClient
@@ -26,4 +26,4 @@ api2.run_request_function(stepMaker, phaseList)
 for result in api2:
     phase = result.metadata['phase']
     response = result.response['choices'][0]['message']['content']
-    print(f"\n{phase}\n:", response)
+    print(f"\n{phase}\n:", response) """

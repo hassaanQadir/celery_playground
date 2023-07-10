@@ -1,4 +1,4 @@
-import openai
+""" import openai
 from dotenv import load_dotenv
 import os
 
@@ -31,4 +31,4 @@ answer = []
 for phase in phases:
     answer.append(test_api(phase))
 
-print(answer)
+print(answer) """

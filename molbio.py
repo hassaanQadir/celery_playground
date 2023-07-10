@@ -1,4 +1,4 @@
-import os
+""" import os
 import json
 import time
 
@@ -186,4 +186,4 @@ def test(user_input):
 if __name__ == "__main__":
    answer = main("Make glow in the dark e. coli")
    with open('readme.txt', 'w') as f:
-    f.write(answer)
+    f.write(answer) """
