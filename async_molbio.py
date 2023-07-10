@@ -1,18 +1,44 @@
-import time
-import json
-import itertools
 import asyncio
-from dotenv import load_dotenv
+import itertools
+import json
 import os
+import time
+
+import openai
+import pinecone
+
+from dotenv import load_dotenv
+
+from langchain import LLMChain, PromptTemplate
+from langchain.callbacks.streaming_stdout import StreamingStdOutCallbackHandler
+from langchain.chat_models import ChatOpenAI
 from langchain.llms import OpenAI
 from langchain.prompts import PromptTemplate
-from langchain.chains import LLMChain
-
+from langchain.prompts.chat import (
+    AIMessagePromptTemplate,
+    ChatPromptTemplate,
+    HumanMessagePromptTemplate,
+    SystemMessagePromptTemplate,
+)
+from langchain.schema import AIMessage, HumanMessage, SystemMessage
 # Load environment variables
 load_dotenv('.env')
 
 # Use the environment variables for the API keys if available
 openai_api_key = os.getenv('OPENAI_API_KEY')
+pinecone_api_key = os.getenv('PINECONE_API_KEY')
+
+# Load agents' data from JSON
+with open('agents.json', 'r') as f:
+    agentsData = json.load(f)
+
+# Set the OpenAI and Pinecone API keys
+openai.api_key = openai_api_key
+pinecone.init(api_key=pinecone_api_key, enviroment="us-west1-gcp")
+
+# Name of the index where we vectorized the OpenTrons API
+index_name = 'opentronsapi-docs'
+index = pinecone.Index(index_name)
 
 def create_llmchain(agent_id):
     """
