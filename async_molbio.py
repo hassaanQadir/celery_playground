@@ -1,5 +1,6 @@
 import time
 import json
+import itertools
 import asyncio
 from dotenv import load_dotenv
 import os
@@ -32,31 +33,26 @@ def process_results(rawList):
 
     return allCleanedItems
 
-def applyAgent(chain, inputList):
+def applyLayer(chain, inputList):
     rawList = asyncio.run(generate_concurrently(chain, inputList))
     finalList = process_results(rawList)
     return finalList
 
 
-def displayOutput(list1, list2, list3, list4, list5):
-    data = {}
+def displayOutput(list1, list2, list3, list4):
+    nested_dict = {}
 
-    for phase in list1:
-        data[phase] = {}
+    for l1 in list1:
+        nested_dict[l1] = {}
+        for l2 in list2[:3]:
+            nested_dict[l1][l2] = {}
+            for l3 in list3[:8]:
+                nested_dict[l1][l2][l3] = list(itertools.islice(list4, 0, 3))
+                del list4[:3]
+            del list3[:8]
+        del list2[:3]
 
-        for step in list2:
-            data[phase][step] = {}
-
-            for substep in list3:
-                data[phase][step][substep] = []
-
-                #for command in list4:
-                #    data[phase][step][substep][command] = []
-
-                    #for API_call in list5:
-                    #    data[phase][step][substep][command] = [API_call]
-    
-    return data
+    return nested_dict
 
 def driver(user_input):
     user_input = [user_input]
@@ -71,28 +67,17 @@ def driver(user_input):
     print("chains created")
     
     #here we run each layer, which is multiple concurrent requests to a given chain
-    layer1 = applyAgent(chain1, user_input)
-    print("layer 1 done")
-    layer1 = [s[:10] for s in layer1]
-    print(layer1)
-    print(len(layer1))
-    layer2 = applyAgent(chain2, layer1)
-    layer2 = [s[:10] for s in layer2]
-    print("layer 2 done")
-    print(layer2)
-    print(len(layer2))
-    layer3 = applyAgent(chain3, layer2)
-    layer3 = [s[:10] for s in layer3]
-    print("layer 3 done")
-    print(layer3)
-    #layer4 = applyAgent(chain4, layer3)
-    #print("layer 4 done")
+    layer1 = applyLayer(chain1, user_input)
+    layer2 = applyLayer(chain2, layer1)
+    layer3 = applyLayer(chain3, layer2)
+    layer4 = applyLayer(chain4, layer3)
+    print("layer 4 done")
     
     # now that we've created all the output,
     # we pass it to a function which puts it in a nested dictionary to print out to display it
-    outputData = displayOutput(layer1, layer2, layer3, [], [])
+    outputData = displayOutput(layer1, layer2, layer3, layer4)
     print(json.dumps(outputData, indent=4))
 
     return outputData
 
-driver("Make glow in the dark E. coli")
+driver("Make yeast that can detect equol")
